@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+            <style>
+        .card{ width: 80%;margin: auto;}
+        #credits{font-size:small;}
+        .carousel-inner > .carousel-item > img{ margin:auto; }
+        #tarot-cards{color:palevioletred; text-align: center;}
+        #story{color:palevioletred;}
+        .turn{color:yellowgreen}
+        .lead{color: pink;}
+        .accordion-body{color:pink}
+        .card-text{color:pink}
+        .carousel-control-next, .carousel-control-prev{filter: invert(100%);}
+        .a-button{filter:invert(50%)}
+        .pink{color:palevioletred;}
+        .songs{font-size:medium;}
+
+        .gradient-background{
+            background: linear-gradient(300deg, #386643, #402252, #633956de);
+            background-size: 180% 180%;
+            animation: gradient-animation 18s ease infinite;
+        }
+
+        @keyframes gradient-animation {
+            0% {
+            background-position: 0% 50%;
+            }
+            50% {
+            background-position: 100% 50%;
+            }
+            100% {
+            background-position: 0% 50%;
+            }
+        }
+
+
+    </style>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            {% include 'header.html' %}
+            <div class="pink mt-5 text-center pt-5">
+                <h1 class="display-5 fw-bold"><em>The Story of Hermes and Hecate</em> </h1>
+            </div>
+            <section id="accordion">
+                <div class="accordion col pb-5" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            1
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                We were happy when we were new. I was first and then she was born. Hecate is different from me. Hecate is born into short-lived, mortal bodies. She is born, she grows up, and she dies. She is the goddess of death magic and witchcraft, but she uses death as a cycle, not a thing to be conquered. But she didn't begin this way.
+                            </div>
+                        </div>
+                        </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            2
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="gradient-background accordion-body">
+                                We lived busy little lives. She had her Coven, and I had my Post. The Star was busy creating, and I was busy helping those creations communicate with one another. You see, sometimes when we creations interact we can become Wild, unstable. But not me. I can touch any god, and find them anywhere. I can speak all their languages and I know all their secrets. Their weaknesses.
+                            </div>
+                        </div>
+                        </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            3
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                So the Star put faith in me to do my job. But he didn't know that creations from the Star change as he changes. He fell in love, and so did I.  And when Hecate was only partway through her first cycle, she was killed by an assassin...I did not handle it with grace.
+                            </div>
+                        </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                4
+                            </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                Trees shook. Mountains erupted around me. Mortals died and lived and died again in a terrible loop. And to stop it all, the Star put me to sleep. He told me that I needed to rest my dust, and begin anew, as Hecate would. He promised me that for the rest of her days, Hecate would always be born again. But I had lost his trust.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                5
+                            </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                I slept until I was called, and then I slept once more. I saw Hecate only in times or war or famine or plague. We found happiness where we could, but it wore on us like an unhealing wound. Sometimes I'd miss her entirely. I'd sleep through lifetimes. I'd wake to find her at the end or the beginning, where her mind knew nothing of me.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                6
+                            </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                So one cycle Hecate set out to fix our problems. She'd find a way to become immortal so she could wait for me, and be the one to find me when I woke. Maybe she could summon me herself if she was forever. And she got her wish.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                7
+                            </button>
+                            </h2>
+                            <div id="collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                Hecate died, and in her next life she was born a daughter of the goddess Chantea. The earth mother had offered up her body to give Hecate a new beginning. But she was not alone. She had a twin. Funny how do often things come in twos.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                8
+                            </button>
+                            </h2>
+                            <div id="collapseEight" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                The twins were to work together to build a new world. Vækket. The Awoken Realm. A new plane for Chantea worshippers. Souls taken from a dead world. Those stripped from the World Eater who followed Chantea to their last breath. Their stardust would be put back into this earth, and Chatea's twin spirits would create it in her image.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                                9
+                            </button>
+                            </h2>
+                            <div id="collapseNine" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                But what Hecate didn't know was how powerful she was, and how jealous her twin became lusting for the same strength. Her twin cursed her. Used her own magic against her, and trapped her in an evil, necrotic tome. The book was her prison, and she would continue to cycle as part of a sick and twisted series of luring mortals in with her power.
+                            </div>
+                            </div>
+                        </div>
+                    <div class="accordion-item">
+                            <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                                10
+                            </button>
+                            </h2>
+                            <div id="collapseTen" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body gradient-background">
+                                Darkness was brought to Vækket from the remnants of Hecate's most terrible followers' creation. The Mad King's Grimoire. It is more evil than anyone knows. And it contains the person I love most. When I woke I knew her fate. I knew what had become of her. And I was powerless to fix it.
+                            </div>
+                            </div>
+                        </div>
+                </div>
+            </section>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    </body>
+</html>
