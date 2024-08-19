@@ -26,17 +26,17 @@ def get_contact():
 
 @app.route("/login", methods=["GET", "POST"])
 def receive_data():
-    name = request.form['name']
-    email = request.form['email']
-    phone = request.form['phone']
-    message = request.form['message']
-    if request.method == "POST":
-        message = f"Name: {name} \nEmail: {email}\nPhone: {phone}\nMessage: \n{message}\n\n"
-        with open(file='input.txt', mode="a") as file:
-            file.writelines(message)
-        print(message)
-        return render_template('form-submitted.html')
-    return "Try again", render_template('contact.html')
+    # name = request.form['name']
+    # email = request.form['email']
+    # phone = request.form['phone']
+    # message = request.form['message']
+    # if request.method == "POST":
+    #     message = f"Name: {name} \nEmail: {email}\nPhone: {phone}\nMessage: \n{message}\n\n"
+    #     with open(file='input.txt', mode="a") as file:
+    #         file.writelines(message)
+    #     print(message)
+    return render_template('form-submitted.html')
+    # return "Try again", render_template('contact.html')
 
 
 
